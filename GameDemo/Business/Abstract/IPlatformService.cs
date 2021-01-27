@@ -8,6 +8,7 @@ namespace GameDemo.Business.Abstract
     interface IPlatformService
     {
         void Buy(IEntity person, IEntity game);
+        void BuyFromSale(IEntity platform, IEntity user, IEntity game);
         void Refund(IEntity person, IEntity game);
     }
 }

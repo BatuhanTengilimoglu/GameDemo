@@ -8,6 +8,6 @@ namespace GameDemo.Business.Concrete.Platform
     interface ISaleService
     {
         void Sale(IEntity game,IEntity platform);
-
+        
     }
 }

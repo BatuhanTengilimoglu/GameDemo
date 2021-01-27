@@ -20,6 +20,12 @@ namespace GameDemo.Business.Concrete.Platform
            Console.WriteLine((person as User).NickName+" "+game.Name + " adlı oyunu Epic Games'ten satın aldı.");
         }
 
+        public void BuyFromSale(IEntity platform, IEntity user, IEntity game)
+        {
+
+            Console.WriteLine((user as User).NickName + " " + game.Name + " adlı oyunu " + platform.Name + " indirimde aldı.");
+        }
+
         public void Refund(IEntity person, IEntity game)
         {
             Console.WriteLine((person as User).NickName+ " " + game.Name + " adlı oyunu Epic Games'e iade etti.");

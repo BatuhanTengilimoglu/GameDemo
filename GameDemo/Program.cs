@@ -30,7 +30,7 @@ namespace GameDemo
             {
                 NickName = "Likeafear",
                 NationalityId = "12345678901",
-                Name = "Batuhan",
+                Name = "Batuhan ",
                 LastName = "Tengilimoğlu",
                 YearOfBirth = 1998,
                 Balance = 1000
@@ -39,7 +39,7 @@ namespace GameDemo
             {
                 NickName = "Aeston",
                 NationalityId = "12345678902",
-                Name = "Oğuzhan",
+                Name = "Oğuzhan ",
                 LastName = "Tengilimoğlu",
                 YearOfBirth = 1992,
                 Balance = 5000
@@ -48,7 +48,7 @@ namespace GameDemo
             {
                 NickName = "Halfrime",
                 NationalityId = "12345678903",
-                Name = "Uğur",
+                Name = "Uğur ",
                 LastName = "Yağbasan",
                 YearOfBirth = 1998,
                 Balance = 800
@@ -68,7 +68,7 @@ namespace GameDemo
             IEntity rdr2 = new Game()
             {
                 Id = 2,
-                Name = "Red Dead Redemption",
+                Name = "Red Dead Redemption 2",
                 Price = 300,
                 Publisher = "Rockstar Games"
             };
@@ -113,7 +113,12 @@ namespace GameDemo
             gunlukIndirimler.Sale(rdr2, epicGames_platform);
             yazIndirimi.Sale(lof2, steam_platform);
 
-            
+            Console.WriteLine("\n***indirimde satın alma***");
+
+            steam.BuyFromSale(steam_platform, batuhan, gow);
+            epic_games.BuyFromSale(epicGames_platform, ugur, rdr2);
+            steam.BuyFromSale(steam_platform, oguzhan, lof2);
+
         }
     }
 }
